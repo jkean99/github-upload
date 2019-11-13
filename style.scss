@@ -1,0 +1,66 @@
+/* ==========================================================================
+
+Theme Name: Jasper Kean Portfolio
+Theme URI: 
+Author: Jasper Kean
+Description: Jasper Kean Portfolio WordPress theme.
+Version: 1.0
+   
+   1. Reset
+   2. Variables
+   3. Mixins
+   4. Base styles: opinionated defaults
+   5. Fonts
+   6. Plugins
+   
+   */
+
+/* ==========================================================================
+   1. Reset
+   ========================================================================== */
+
+    @import "inc/sass/normalize";
+
+/* ==========================================================================
+   2. Variables
+   ========================================================================== */
+
+    @import "inc/sass/variables";
+
+/* ==========================================================================
+   3. Mixins
+   ========================================================================== */
+
+    @import "inc/sass/mixins";
+
+/* ==========================================================================
+   4. Base Styles
+   ========================================================================== */
+
+    @import "inc/sass/base";
+
+/* ==========================================================================
+   5. Fonts
+   ========================================================================== */
+
+    @import "inc/sass/fonts";
+
+/* ==========================================================================
+   6. Plugins
+   ========================================================================== */
+    @import "inc/sass/font-awesome";
+    @import "inc/sass/slick";
+    @import "inc/sass/slick-theme";
+    @import "inc/sass/animate";
+    @import "inc/sass/aos";
+
+/* ==========================================================================
+7. Blocks
+========================================================================== */
+@import "inc/sass/blocks/header";
+@import "inc/sass/blocks/footer";
+@import "inc/sass/blocks/hero";
+@import "inc/sass/blocks/work";
+@import "inc/sass/blocks/technologies";
+@import "inc/sass/blocks/contact";
+@import "inc/sass/blocks/intro";

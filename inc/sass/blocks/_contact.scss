@@ -1,0 +1,124 @@
+.contact {
+    background: rgb(112,113,192);
+    background: linear-gradient(83deg, rgba(112,113,192,1) 0%, rgba(78,106,174,1) 50%);
+    background-color: $mainColour;
+    color: $white;
+
+    .container {
+        padding: 65px 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        max-width: 640px;
+        margin: 60px auto 0;
+    }
+
+    .row {
+
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            margin: 0 -15px 15px;
+        }
+
+        .col {
+            flex: none;
+            margin-bottom: 15px;
+            
+            @media only screen and (min-width: 768px) {
+                width: 50%;
+                padding: 0 15px;
+                margin: 0;
+            }
+
+        }
+
+    }
+
+    .wpcf7-form-control {
+        margin-top: 10px;
+    }
+
+    input:not([type=submit]), textarea {
+        width: 100%;
+        display: block;
+        border: 1px solid #E6ECF8;
+        color: #141c3a;
+        box-shadow: none;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 35px;
+        padding: 12px 8px;
+    }
+
+    span.wpcf7-not-valid-tip {
+        margin-top: 10px;
+        color: $white;
+        font-size: 16px;
+    }
+
+    div.wpcf7-response-output {
+        display: none !important;
+    }
+    
+    input[type="submit"] {
+        display: inline-block;
+        border-radius: 120px;
+        padding: 15px 25px;
+        min-width: 180px;
+        border: 2px solid $secondaryColour;
+        background-color: $white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+        margin-top: 35px;
+
+        &:hover {
+
+            &:before {
+                width: 100%;
+            }
+
+        }
+
+        &:before {
+            transition: all 0.3s;
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 100%;
+            display: block;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: $secondaryColour;
+            width: 0;
+        }
+
+    }
+
+    p:last-of-type {
+        text-align: center;
+    }
+    
+    textarea {
+        padding: 12px;
+        height: 165px;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+
+        span {
+            display: block;
+        }
+
+    }
+
+}

@@ -1,0 +1,53 @@
+.site-header {
+
+    .container {
+        padding: 32px 0;
+    }
+
+    .button {
+        float: right;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            transition: all 0.3s;
+            width: 0%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            height: 100%;
+            background-color: $mainColour;
+        }
+
+        &:hover {
+            color: $white;
+
+            &::before {
+                width: 101%;
+            }
+
+        }
+
+    }
+
+    .logo {
+        float: left;
+        font-weight: 700;
+        color: #000;
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+
+        @media only screen and (min-width: 360px) {
+            font-size: 22px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 28px;
+        }
+
+    }
+
+}

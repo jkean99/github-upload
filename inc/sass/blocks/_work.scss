@@ -1,0 +1,130 @@
+.work {
+    text-align: center;
+    
+    .container {
+        padding: 40px 0;
+
+        @media only screen and (min-width: 500px) {
+            padding: 60px 0;
+        }
+
+        @media only screen and (min-width: 768px) {
+            padding: 80px 0;
+        }
+
+    }
+
+    h2 {
+        font-size: 32px;
+        
+        & + p {
+            font-size: 16px;
+
+            @media only screen and (min-width: 500px) {
+                font-size: 18px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                font-size: 20px;
+            }
+
+        }
+
+    }
+
+    .work-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 20px 0;
+        
+        @media only screen and (min-width: 500px) {
+            padding: 40px 0;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            margin: 0 -15px;
+            padding: 65px 0;
+        }
+
+        &__item {
+            flex: none;
+            width: 100%;
+            padding: 15px 0;
+            
+            @media only screen and (min-width: 768px) {
+                padding: 15px;
+                width: 33.3333%;
+            }
+
+            figure {
+                box-shadow: 0 5px 25px 8px #e2e2e2;
+                position: relative;
+                overflow: hidden;
+                height: 0;
+                border-radius: 12px;
+                padding-top: 54%;
+
+                &:hover {
+
+                    figcaption {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
+
+
+                .bg {
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+                figcaption {
+                    display: flex;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    padding: 0rem 3rem;
+                    transition: all 0.3s;
+                    color: #fff;
+                    background-color: rgba($mainText, $alpha: 0.8);
+                    z-index: 1;
+
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: $white;
+                        background-color: $mainColour;
+                        border-radius: 120px;
+                        font-weight: bold;
+                        padding: 10px 20px;
+                        margin-top: 20px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

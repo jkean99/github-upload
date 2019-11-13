@@ -1,0 +1,108 @@
+.technologies {
+    margin-top: -180px;
+
+    @media only screen and (min-width: 450px) {
+        margin-top: -200px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        margin-top: -220px;
+    }
+
+    @media only screen and (min-width: 890px) {
+        margin-top: -250px;
+    }
+
+    .container {
+        padding: 40px 0;
+
+        @media only screen and (min-width: 450px) {
+            padding: 50px 0;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            padding: 60px 0;
+        }
+
+        @media only screen and (min-width: 890px) {
+            padding: 80px 0;
+        }
+
+    }
+
+    .tech-block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 15px;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        background-color: $white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+
+        @media only screen and (min-width: 690px) {
+            margin: 0 -15px;
+        }
+
+        &__item {
+            padding: 30px 20px;
+            border-left: 1px solid #E6ECF8;
+            border-bottom: 1px solid #E6ECF8;
+            width: 100%;
+            flex: 0 0 100%;
+
+            @media only screen and (min-width: 590px) {
+                padding: 40px 25px;
+                flex: 0 0 50%;
+                width: 50%;
+            }
+    
+            @media only screen and (min-width: 690px) {
+                flex: 0 0 33.333%;
+                width: 33.333%;
+                padding: 70px 45px;
+            }
+
+            &:first-child {
+                border-left: 0;
+            }
+        
+            strong {
+                color: $mainColour;
+            }
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            p, li {
+                line-height: 1.6;
+            }
+
+            figure {
+                text-align: center;
+
+                img {
+                    margin: 0 auto 25px;
+                    max-width: 40px;
+                    height: auto;
+
+                    @media only screen and (min-width: 590px) {
+                        max-width: 60px;
+                    }
+            
+                    @media only screen and (min-width: 690px) {
+                        max-width: 80px;
+                    }
+
+                }
+
+            }
+        
+        }
+
+    }
+
+}

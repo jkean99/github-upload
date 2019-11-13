@@ -1,0 +1,107 @@
+/* css3 elements */
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: all $transition ease-in-out;
+  -moz-transition: all $transition ease-in-out;
+  -o-transition: all $transition ease-in-out;
+  transition: all $transition ease-in-out;
+}
+
+@mixin transition-property($transition-property...) {
+  -webkit-transition-property: $transition-property;
+          transition-property: $transition-property;
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: $transition-delay;
+          transition-delay: $transition-delay;
+}
+
+@mixin transition-duration($transition-duration...) {
+  -webkit-transition-duration: $transition-duration;
+          transition-duration: $transition-duration;
+}
+
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+
+@mixin placeholder($placeholder) {
+	::-webkit-input-placeholder {color: $placeholder}
+	:-moz-placeholder {color: $placeholder}
+	::-moz-placeholder {color: $placeholder}
+	:-ms-input-placeholder {color: $placeholder}
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@mixin inline {
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+}
+@mixin no-format {
+ 	list-style:none;
+ 	padding:0;
+ 	margin:0
+}
+@mixin indent {
+ 	text-transform:capitalize;
+ 	text-align:left;
+ 	text-indent:-99999px
+}
+@mixin rel {
+ 	position:relative
+}
+@mixin box {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box
+}
+@mixin flex {
+ 	display: -webkit-flex;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-flex-wrap: wrap;
+ 	-ms-flex-wrap: wrap;
+ 	flex-wrap: wrap;
+}
+@mixin flex-box {
+ 	display: -webkit-flex;
+ 	display: -ms-flexbox;
+ 	display: flex;
+}
+@mixin clearfix {
+ 	&:before,
+ 	&:after {content: " ";display: table}
+ 	&:after {clear: both}
+}
