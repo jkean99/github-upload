@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Template
+ * 404 Template
  *
  * @author    Jasper Kean Portfolio
  * @copyright 2018 Jasper Kean Portfolio
@@ -12,17 +12,13 @@ get_header(); ?>
 	
 	<div id="error404page">
 		
-		<div class="table">
-			
-			<div class="cell">
+		<div class="container">
 				
-				<div class="container text-block content">
-					
-					<h1>The page requested does not exist.</h1>
+			<div class="content">
+				
+				<h1>The page requested does not exist.</h1>
 
-					<h2><a href="<?php bloginfo('url'); ?>">Please click here to return to the homepage</a></h2>
-
-				</div>
+				<h2><a href="<?php bloginfo('url'); ?>">Please click here to return to the homepage</a></h2>
 
 			</div>
 

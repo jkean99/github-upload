@@ -1192,6 +1192,10 @@ h1,h2,h3,h4,h5,h6{display:block;clear:both;font-weight:700;font-family:'Cairo',s
 .intro h2{font-size:18px}
 .intro p{font-size:16px}
 .intro .container{padding:60px 0 180px}
+#error404page .container{padding:30px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:75vh}
+#error404page .content{-webkit-box-flex:0;-ms-flex:none;flex:none;text-align:center;width:100%}
+#error404page h1{font-size:22px}
+#error404page h2{font-size:16px}
 @media only screen and (min-width:360px){.site-header .logo{font-size:22px}
 }@media only screen and (min-width:450px){.hero .container{padding:40px 0 60px}
 .hero h1{font-size:28px}
@@ -1206,6 +1210,8 @@ h1,h2,h3,h4,h5,h6{display:block;clear:both;font-weight:700;font-family:'Cairo',s
 .work .container{padding:60px 0}
 .work h2+p{font-size:18px}
 .work .work-block{padding:40px 0}
+#error404page h1{font-size:32px}
+#error404page h2{font-size:20px}
 }@media only screen and (min-width:590px){.technologies .tech-block__item{padding:40px 25px;-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;width:50%}
 .technologies .tech-block__item figure img{max-width:60px}
 }@media only screen and (min-width:690px){.technologies .tech-block{margin:0 -15px}
@@ -1228,6 +1234,8 @@ h1,h2,h3,h4,h5,h6{margin-bottom:32px}
 .intro h2{font-size:28px}
 .intro p{font-size:20px}
 .intro .container{padding:120px 0 280px}
+#error404page h1{font-size:48px}
+#error404page h2{font-size:24px}
 }@media only screen and (min-width:890px){.hero .container{padding:120px 0 180px}
 .hero h1{font-size:48px}
 .hero h2{font-size:32px}
